@@ -15,9 +15,14 @@ public interface ControlPanelListener {
      */
     void onColorSelected(ColorPickerColors color);
 
-    // TODO: comment
+    /**
+     * Will be called when the user selects a draw tool
+     * @param tool The tool the user selected
+     */
     void onToolSelected(DrawTools tool);
 
-    // TODO: comment
+    /**
+     * Will be called when the user clicks clear canvas button
+     */
     void onClear();
 }

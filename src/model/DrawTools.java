@@ -1,5 +1,8 @@
 package model;
 
+/**
+ * The available draw tools
+ */
 public enum DrawTools {
     PENCIL,
     LINE,

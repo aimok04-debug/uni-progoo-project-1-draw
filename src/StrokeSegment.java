@@ -11,7 +11,7 @@ public class StrokeSegment {
     private final int y1;
     private final int x2;
     private final int y2;
-    public Color color;
+    private Color color;
     private final int width;
 
     public StrokeSegment(int x1, int y1, int x2, int y2, Color color, int width) {
@@ -21,6 +21,10 @@ public class StrokeSegment {
         this.y2 = y2;
         this.color = color;
         this.width = width;
+    }
+
+    void setColor(Color color) {
+        this.color = color;
     }
 
     void paint(Graphics2D graphics2d) {

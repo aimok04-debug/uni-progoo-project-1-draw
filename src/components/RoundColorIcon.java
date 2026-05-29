@@ -27,6 +27,13 @@ public class RoundColorIcon implements Icon {
         this.selected = selected;
     }
 
+    /**
+     * Override paintIcon to draw the round color icon
+     * @param c The component the icon is painted on
+     * @param g The graphics context
+     * @param x The x coordinate of the icon
+     * @param y The y coordinate of the icon
+     */
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
         if(selected) {
@@ -50,7 +57,15 @@ public class RoundColorIcon implements Icon {
         g2.dispose();
     }
 
+    /**
+     * Override the icon width
+     * @return Always returns 50
+     */
     @Override public int getIconWidth() { return 50; }
 
+    /**
+     * Override the icon height
+     * @return Always returns 50
+     */
     @Override public int getIconHeight() { return 50; }
 }

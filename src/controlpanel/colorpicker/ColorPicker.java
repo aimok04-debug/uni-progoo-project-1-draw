@@ -1,7 +1,6 @@
 package controlpanel.colorpicker;
 
 import components.RoundColorButton;
-import controlpanel.ControlPanel;
 import controlpanel.ControlPanelListener;
 
 import javax.swing.*;

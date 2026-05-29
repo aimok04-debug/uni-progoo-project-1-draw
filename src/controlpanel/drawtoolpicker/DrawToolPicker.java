@@ -13,10 +13,20 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A picker for the DrawTools enum
+ */
 public class DrawToolPicker {
 
+    /**
+     * The components to draw on the JPanel
+     */
     private List<Component> components = new ArrayList<>();
 
+    /**
+     * Construct a new DrawToolPicker
+     * @param listener The control panel listener the draw tool picker should use to propagate selection changes
+     */
     public DrawToolPicker(ControlPanelListener listener) {
         ButtonGroup buttonGroup = new ButtonGroup();
         for(DrawTools tool : DrawTools.values()) {
